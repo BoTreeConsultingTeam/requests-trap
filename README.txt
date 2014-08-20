@@ -1,4 +1,4 @@
-______________________
+                         ______________________
 
                              REQUESTS-TRAP
 
@@ -73,7 +73,7 @@ _________________
   - ...
 
   Also include a copy of the raw response, hidden by default, open
-  clicking a link.
+  clicking a link:
 
   New requests should appear on the page in real time, without a page
   refresh.
