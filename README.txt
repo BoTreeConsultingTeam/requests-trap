@@ -73,7 +73,12 @@ _________________
   - ...
 
   Also include a copy of the raw response, hidden by default, open
-  clicking a link:
+  clicking a link.
 
   New requests should appear on the page in real time, without a page
   refresh.
+
+3 Deployment
+============
+
+  The app must be deployed to Heroku.
