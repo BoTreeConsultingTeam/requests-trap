@@ -27,7 +27,7 @@ _________________
   you participate in this development exercise by following these guidelines:
 
     i.    clone this repo into your own private repo
-    ii.   commit early and often with verbose descriptions
+    ii.   commit early and often
     iii.  track the time spent developing the project
     iv.   as a guideline, note that this project shouldn't take more than 5 hours
     v.    to be considered complete, your app should be deployed to Heroku
