@@ -34,6 +34,7 @@ _________________
     vi.   when done, give read-only access to your repo to the user 'firefield'
     vii.  Email the instructions for accessing the app on Heroku to jobs@firefield.com
     viii. In that email, include the time spent on the project any anything else you want to share.
+    ix.   Note that this isn't work for hire. You retain ownership of all the code you write.
 
   Once we receive a submission, will will get back to you as quickly as possible. Thanks for
   participating.
