@@ -19,18 +19,19 @@ _________________
 
   When looking to grow our team at Firefield, we feel that reviewing a candidate's work is 
   absolutely critical. For us, reviewing commit history is the only way to really assess a
-  developer's work. We understand that it's often hard to share code and commit history, 
-  especially when working on private client projects under and NDA.
+  developer's work. We understand that it's often hard to share code and a history of commits, 
+  especially when working on private client projects under an NDA.
 
   We created this small project in order to help solve this issue - giving developers a chance
-  to show us how they work. If you are interested in joining the Firefield team, please
-  consider participating in this development exercise by following these guidelines:
+  to show us how they work. If you are interested in joining the Firefield team, we ask that
+  you participate in this development exercise by following these guidelines:
 
     i.   < describe how to pull the repo and get started >
     ii.  commit early and often with verbose descriptions
     iii. track the time spent developing the project
     iv.  as a guideline, note that this project shouldn't take more than xx hours
-    v.   < describe how to let us know you are done >
+    v.   to be considered complete, your app should be deployed to Heroku
+    vi.   < describe how to let us know you are done >
 
 2 description
 =============
@@ -73,7 +74,7 @@ _________________
   Any request [POST, PUT, GET, DELETE, ...] made to /:trap_id will be
   saved in the db and displayed in /:trap_id/requests
 
-  In response to any request made to /:trap_id, we  will respond with the
+  In response to any request made to /:trap_id, we will respond with the
   correct http code if success or not.
 
   In /:trap_id/requests we should see the trap_id in the header, and a
