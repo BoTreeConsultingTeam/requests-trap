@@ -26,15 +26,16 @@ _________________
   to show us how they work. If you are interested in joining the Firefield team, we ask that
   you participate in this development exercise by following these guidelines:
 
-    i.    clone this repo into your own private repo
-    ii.   commit early and often
-    iii.  track the time spent developing the project
-    iv.   as a guideline, this is a small project and should not take much time to complete
-    v.    to be considered complete, your app should be deployed to Heroku
-    vi.   when done, give read-only access to your repo to the user 'firefield'
-    vii.  Email the instructions for accessing the app on Heroku to jobs@firefield.com
-    viii. In that email, include the time spent on the project any anything else you want to share.
-    ix.   Note that this isn't work for hire. You retain ownership of all the code you write.
+    i.    this app must be written in Rails
+    ii.   clone this repo into your own private repo
+    iii.  commit early and often
+    iv.   track the time spent developing the project
+    v.    as a guideline, this is a small project and should not take much time to complete
+    vi.   to be considered complete, your app should be deployed to Heroku
+    vii.  when done, give read-only access to your repo to the user 'firefield'
+    viii. Email the instructions for accessing the app on Heroku to jobs@firefield.com
+    ix.   In that email, include the time spent on the project any anything else you want to share.
+    x.    Note that this isn't work for hire. You retain ownership of all the code you write.
 
   Once we receive a submission, will will get back to you as quickly as possible. Thanks for
   participating.
