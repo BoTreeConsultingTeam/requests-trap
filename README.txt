@@ -26,13 +26,14 @@ _________________
   to show us how they work. If you are interested in joining the Firefield team, we ask that
   you participate in this development exercise by following these guidelines:
 
-    i.   clone this repo into your own private repo
-    ii.  commit early and often with verbose descriptions
-    iii. track the time spent developing the project
-    iv.  as a guideline, note that this project shouldn't take more than 5 hours
-    v.   to be considered complete, your app should be deployed to Heroku
-    vi.  when done, give read-only access to your repo to the user 'firefield'
-    vii. Email the instructions for accessing the app on Heroku to jobs@firefield.com
+    i.    clone this repo into your own private repo
+    ii.   commit early and often with verbose descriptions
+    iii.  track the time spent developing the project
+    iv.   as a guideline, note that this project shouldn't take more than 5 hours
+    v.    to be considered complete, your app should be deployed to Heroku
+    vi.   when done, give read-only access to your repo to the user 'firefield'
+    vii.  Email the instructions for accessing the app on Heroku to jobs@firefield.com
+    viii. In that email, include the time spent on the project any anything else you want to share.
 
   Once we receive a submission, will will get back to you as quickly as possible. Thanks for
   participating.
