@@ -1,4 +1,4 @@
-                         ______________________
+______________________
 
                              REQUESTS-TRAP
 
@@ -9,36 +9,42 @@
 Table of Contents
 _________________
 
-1 description
-2 How it works
-3 request
+1 the rules
+2 description
+3 How it works
+4 deployment
 
-
-1 description
+1 the rules
 =============
 
-  A tool for capture and display http requests.
 
-  This will be useful during integration with external services, http
-  clients, webhooks, whatever. For example, we are developing an
-  ecommerce site named "fireshop" with paypal integration, paypal sends
-  notifications to an endpoint on your app, you can tell paypal to use
-  an url in his tool to see the requests during development.
+2 description
+=============
 
-  We can give paypal this url:
+  Requests Trap: A tool for the capture and display of http requests.
+
+  This simple app will be useful during the development of apps that integrate with external
+  services, such as http clients, webhooks, etc. The Requests Trap app ('RT App') provides these
+  services with an endpoint to which they can send requests and notifications. 
+
+  For example, let's assume we are developing an ecommerce site named "fireshop" with PayPal
+  integration. During development, Fireshop can use RT App to see PayPal requests via a    
+  specific endpoint. 
+
+  If RT App gives this URL to the PayPal service:
 
   ,----
   | http://requests-trap.com/fireshop
   `----
 
-  And we could see the IPN notifications send by paypal here:
+  Then RT App could see the IPN notifications sent by PayPal here:
 
   ,----
   | http://requests-trap.com/fireshop/requests
   `----
 
 
-2 How it works
+3 How it works
 ==============
 
   The app has three routes:
@@ -78,7 +84,7 @@ _________________
   New requests should appear on the page in real time, without a page
   refresh.
 
-3 Deployment
+4 Deployment
 ============
 
   The app must be deployed to Heroku.
