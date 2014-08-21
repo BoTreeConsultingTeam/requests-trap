@@ -55,7 +55,7 @@ _________________
   integration. During development, Fireshop can use Req App to see PayPal requests via a    
   specific endpoint. 
 
-  If Req App gives this URL to the PayPal service:
+  If a Req App user gives this URL to the PayPal service:
 
   ,----
   | http://requests-trap.com/fireshop
