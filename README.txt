@@ -1,4 +1,4 @@
-______________________
+                         ______________________
 
                              REQUESTS-TRAP
 
@@ -17,9 +17,9 @@ _________________
 1 the rules
 =============
 
-  When looking to grow our team at Firefield, we feel that reviewing a candidate's work is 
+  When looking to grow our team at Firefield, we feel that reviewing a candidate's work is
   absolutely critical. For us, reviewing commit history is the only way to really assess a
-  developer's work. We understand that it's often hard to share code and a history of commits, 
+  developer's work. We understand that it's often hard to share code and a history of commits,
   especially when working on private client projects under an NDA.
 
   We created this small project in order to help solve this issue - giving developers a chance
@@ -40,20 +40,21 @@ _________________
   Once we receive a submission, will will get back to you as quickly as possible. Thanks for
   participating.
 
-  
+
 
 2 description
 =============
 
-  Requests Trap: A tool for the capture and display of http requests.
+  Requests Trap: A tool for capture and display HTTP requests.
 
-  This simple tool is useful during the development of apps that integrate with external
-  services, such as http clients, webhooks, etc. The Requests Trap app ('Req App') provides these
-  services with an endpoint to which they can send requests and notifications. 
+  This simple tool is useful during the development of apps that
+  integrate with external services, such as http clients, webhooks,
+  etc. The Requests Trap app ('Req App') provides these services with
+  an endpoint to which they can send requests and notifications.
 
-  For example, let's assume we are developing an ecommerce site named "fireshop" with PayPal
-  integration. During development, Fireshop can use Req App to see PayPal requests via a    
-  specific endpoint. 
+  For example, let's assume we are developing an ecommerce site named
+  "fireshop" with PayPal integration. During development, Fireshop can
+  use Req App to see PayPal requests via a specific endpoint.
 
   If a Req App user gives this URL to the PayPal service:
 
@@ -61,17 +62,25 @@ _________________
   | http://requests-trap.com/fireshop
   `----
 
-  Then Req App could see the IPN notifications sent by PayPal here:
+  Then the user could see the IPN notifications sent by PayPal here:
 
   ,----
   | http://requests-trap.com/fireshop/requests
+  `----
+
+  The user can choose any url, all the requests made to that url can
+  be viewed by anyone that knows the url, so he can use hard-to-guess
+  urls to avoid that:
+
+  ,----
+  | http://requests-trap.com/mysupersecreturlxj34
   `----
 
 
 3 How it works
 ==============
 
-  The app has three routes:
+  The app has four routes:
 
   ,----
   | /                       # splash page with some instructions
