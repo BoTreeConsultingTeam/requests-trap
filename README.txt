@@ -29,7 +29,7 @@ _________________
     i.   clone this repo into your own private repo
     ii.  commit early and often with verbose descriptions
     iii. track the time spent developing the project
-    iv.  as a guideline, note that this project shouldn't take more than xx hours
+    iv.  as a guideline, note that this project shouldn't take more than 5 hours
     v.   to be considered complete, your app should be deployed to Heroku
     vi.  when done, give read-only access to your repo to the user 'firefield'
     vii. Email the instructions for accessing the app on Heroku to jobs@firefield.com
