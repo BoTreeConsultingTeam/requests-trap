@@ -47,20 +47,20 @@ _________________
   Requests Trap: A tool for the capture and display of http requests.
 
   This simple tool is useful during the development of apps that integrate with external
-  services, such as http clients, webhooks, etc. The Requests Trap app ('RT App') provides these
+  services, such as http clients, webhooks, etc. The Requests Trap app ('Req App') provides these
   services with an endpoint to which they can send requests and notifications. 
 
   For example, let's assume we are developing an ecommerce site named "fireshop" with PayPal
-  integration. During development, Fireshop can use RT App to see PayPal requests via a    
+  integration. During development, Fireshop can use Req App to see PayPal requests via a    
   specific endpoint. 
 
-  If RT App gives this URL to the PayPal service:
+  If Req App gives this URL to the PayPal service:
 
   ,----
   | http://requests-trap.com/fireshop
   `----
 
-  Then RT App could see the IPN notifications sent by PayPal here:
+  Then Req App could see the IPN notifications sent by PayPal here:
 
   ,----
   | http://requests-trap.com/fireshop/requests
