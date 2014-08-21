@@ -17,13 +17,27 @@ _________________
 1 the rules
 =============
 
+  When looking to grow our team at Firefield, we feel that reviewing a candidate's work is 
+  absolutely critical. For us, reviewing commit history is the only way to really assess a
+  developer's work. We understand that it's often hard to share code and commit history, 
+  especially when working on private client projects under and NDA.
+
+  We created this small project in order to help solve this issue - giving developers a chance
+  to show us how they work. If you are interested in joining the Firefield team, please
+  consider participating in this development exercise by following these guidelines:
+
+    i.   < describe how to pull the repo and get started >
+    ii.  commit early and often with verbose descriptions
+    iii. track the time spent developing the project
+    iv.  as a guideline, note that this project shouldn't take more than xx hours
+    v.   < describe how to let us know you are done >
 
 2 description
 =============
 
   Requests Trap: A tool for the capture and display of http requests.
 
-  This simple app will be useful during the development of apps that integrate with external
+  This simple tool is useful during the development of apps that integrate with external
   services, such as http clients, webhooks, etc. The Requests Trap app ('RT App') provides these
   services with an endpoint to which they can send requests and notifications. 
 
@@ -78,13 +92,13 @@ _________________
   - headers
   - ...
 
-  Also include a copy of the raw response, hidden by default, open
+  Also include a copy of the raw response, hidden by default, opened by
   clicking a link.
 
   New requests should appear on the page in real time, without a page
   refresh.
 
-4 Deployment
+4 deployment
 ============
 
   The app must be deployed to Heroku.
