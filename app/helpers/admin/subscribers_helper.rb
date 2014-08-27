@@ -1,7 +1,6 @@
 module Admin::SubscribersHelper
   def subscriber_trapped_requests_link(subscriber)
-    # TODO
-    href = subscriber.present? ? "#" : "#"
+    href = subscriber.present? ? admin_subscriber_trapped_requests_path(subscriber_id: subscriber.id) : "#"
     link_to("Trapped Requests", href)
   end
 
