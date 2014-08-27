@@ -31,7 +31,7 @@ module TrappedRequestsHelper
     if trapped_request.present?
       subscriber = trapped_request.subscriber
       if subscriber.present?
-        subscriber_trapping_code = subscriber.subscriber_trapping_code
+        subscriber_trapping_code = subscriber.trapping_code
         href = request_path(
                  subscriber_trapping_code: subscriber_trapping_code,
                  id: trapped_request.id)
