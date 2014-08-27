@@ -29,7 +29,7 @@ module TrappedRequestsHelper
   def trapped_request_show_link_for_subscriber(trapped_request)
     href = "#"
     if trapped_request.present?
-      subscriber = trapped_request.subscribe
+      subscriber = trapped_request.subscriber
       if subscriber.present?
         subscriber_trapping_code = subscriber.subscriber_trapping_code
         href = request_path(
