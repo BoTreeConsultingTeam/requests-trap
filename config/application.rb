@@ -58,5 +58,9 @@ module RequestsTrap
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    # Reference: http://stackoverflow.com/questions/21175576/heroku-postgres-could-not-connect-to-server-connection-refused
+    config.assets.initialize_on_precompile = false
+
   end
 end
