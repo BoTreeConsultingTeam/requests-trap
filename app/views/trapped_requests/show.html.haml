@@ -2,7 +2,7 @@
   - trapped_request = @trapped_request
   - if trapped_request.present?
     = back_button_from_trapped_request_page(params)
-    - set_page_header("#{@subscriber.name} - Request Id ##{@trapped_request.id} Details", false)
+    - set_page_header("#{@subscriber.trapping_code} - Request Id ##{@trapped_request.id} Details", false)
 
     %br/
     %br/

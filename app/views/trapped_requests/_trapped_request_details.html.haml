@@ -14,7 +14,7 @@
         = text_field_tag(:request_method, request_method, class: 'form-control', disabled: true)
 
     .form-group
-      = label_tag(:remote_ip, "Request Date", class: 'col-md-2 control-label')
+      = label_tag(:remote_ip, "Remote IP", class: 'col-md-2 control-label')
       .col-md-5
         - remote_ip = trapped_request.remote_ip
         = text_field_tag(:remote_ip, remote_ip, class: 'form-control', disabled: true)

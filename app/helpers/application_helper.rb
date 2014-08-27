@@ -19,11 +19,13 @@ module ApplicationHelper
 
   def back_button_from_trapped_request_page(params)
     subscriber_id = params[:subscriber_id]
+    back_button_path = ""
     if subscriber_id.present?
-      back_button("Back To Subscriber Trapped Requests Listing", admin_subscriber_trapped_requests_path(subscriber_id: subscriber_id))
+      back_button_path = admin_subscriber_trapped_requests_path(subscriber_id: subscriber_id)
     else
-      back_button("Back To Home")
+      back_button_path = requests_path(subscriber_trapping_code: params[:subscriber_trapping_code])
     end
+    back_button("Back To Subscriber Trapped Requests Listing", back_button_path)
   end
 
   def set_page_header(header_text, show_home_button=true)
