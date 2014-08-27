@@ -2,4 +2,24 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  admin:
+    subscriber:
+      caption:
+        create_subscriber_btn: 'Create Subscriber'
+      header:
+        index: "Subscribers Listing"
+        new: "Create New Subscriber"
+        edit: "Edit Subscriber"
+      message:
+        no_subscriber_found: "No subscribers found."
+        inexistent_subscriber: "No subscriber found in the system with id %{subscriber_id}."
+        create:
+          success: "Successfully created the subscriber."
+          failure: "Could not successfully create the subscriber."
+        update:
+          success: "Successfully updated the subscriber."
+          failure: "Could not successfully update the subscriber."
+        remove:
+          success: "Successfully removed the subscriber."
+          failure: "Could not successfully remove the subscriber."
+

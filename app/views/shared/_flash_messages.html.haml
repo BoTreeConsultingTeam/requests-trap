@@ -1,0 +1,12 @@
+- unless flash.empty?
+  .row
+    %br/
+    - flash.each do |name, message|
+      - css_class = ''
+      - case name
+        - when :error
+          - css_class = 'bg-danger'
+        - when :notice
+          - css_class = 'bg-success'
+
+      = simple_format(message, class: ".col-md-offset-3 #{css_class}")

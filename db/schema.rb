@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140827084725) do
+ActiveRecord::Schema.define(:version => 20140827130307) do
 
   create_table "subscribers", :force => true do |t|
     t.string   "email"
@@ -21,7 +21,8 @@ ActiveRecord::Schema.define(:version => 20140827084725) do
     t.datetime "updated_at",    :null => false
   end
 
-  add_index "subscribers", ["email", "trapping_code"], :name => "index_subscribers_on_email_and_trapping_code", :unique => true
+  add_index "subscribers", ["email"], :name => "index_subscribers_on_email", :unique => true
+  add_index "subscribers", ["trapping_code"], :name => "index_subscribers_on_trapping_code", :unique => true
 
   create_table "trapped_requests", :force => true do |t|
     t.datetime "request_date"

@@ -1,0 +1,9 @@
+- set_page_header(t('admin.subscriber.header.index'))
+
+- subscribers = @subscribers
+
+- if subscribers.empty?
+  = render partial: "admin/subscribers/no_subscribers_found"
+- else
+  = render partial: "admin/subscribers/subscribers_listing", locals: { subscribers: subscribers }
+

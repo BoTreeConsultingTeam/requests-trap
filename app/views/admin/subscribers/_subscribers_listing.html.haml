@@ -1,0 +1,24 @@
+- subscribers = local_assigns.has_key?(:subscribers) ? subscribers : nil
+- if subscribers.present?
+  = render partial: 'admin/subscribers/create_subscriber_button'
+  %table.table.table-striped
+    %thead
+      %tr
+        %th Trap Id
+        %th Name
+        %th Email
+        %th Created On
+        %th
+        %th
+        %th
+
+      %tbody
+        - subscribers.each do |subscriber|
+          %tr
+            %td= subscriber.trapping_code
+            %td= subscriber.name
+            %td= subscriber.email
+            %td= format_date(subscriber.created_at)
+            %td= subscriber_trapped_requests_link(subscriber)
+            %td= subscriber_edit_link(subscriber)
+            %td= subscriber_remove_link(subscriber)

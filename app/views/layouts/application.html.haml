@@ -6,5 +6,7 @@
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body
-    .container-fluid
+    .container
+      = render partial: "shared/header"
+      = render partial: "shared/flash_messages"
       = yield
