@@ -1,1 +1,14 @@
-- set_page_header("#{@subscriber.name} - Trapped Requests Listing")
+- if @subscriber.present?
+  = back_button_from_trapped_requests_page(params)
+  - set_page_header("#{@subscriber.trapping_code} - Trapped Requests Listing", false)
+
+  - trapped_requests = @trapped_requests
+  - if trapped_requests.empty?
+    = render partial: "trapped_requests/no_trapped_requests_found"
+  - else
+    - user_context = find_user_context(params)
+    = render partial: "trapped_requests/trapped_requests_listing", locals: { trapped_requests: trapped_requests,  user_context: user_context}
+- else
+  = back_button_from_trapped_requests_page(params)
+  %p
+    %h3= t('trapped_request.message.inexistent_subscriber')

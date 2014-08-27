@@ -12,7 +12,7 @@ en:
         edit: "Edit Subscriber"
       message:
         no_subscriber_found: "No subscribers found."
-        inexistent_subscriber: "No subscriber found in the system with id %{subscriber_id}."
+        inexistent_subscriber: "No subscriber found in the system having id %{subscriber_id}."
         create:
           success: "Successfully created the subscriber."
           failure: "Could not successfully create the subscriber."
@@ -23,3 +23,8 @@ en:
           success: "Successfully removed the subscriber."
           failure: "Could not successfully remove the subscriber."
 
+  trapped_request:
+    message:
+      no_trapped_requests_found_for_subscriber: "No trapped requests found for subscriber %{subscriber_name}."
+      inexistent_subscriber: "Inexistent Subscriber"
+      not_found: "Trapped Request having id %{trapped_request_id} not found in the system for subscriber %{subscriber_name}."

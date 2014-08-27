@@ -1,0 +1,6 @@
+.row
+  .col-md-12
+    %p.text-info
+      %h4
+        = t('trapped_request.message.no_trapped_requests_found_for_subscriber', subscriber_name: @subscriber.try(:name))
+

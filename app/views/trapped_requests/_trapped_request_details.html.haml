@@ -1,0 +1,51 @@
+- trapped_request = local_assigns.has_key?(:trapped_request) ? trapped_request : nil
+- if trapped_request.present?
+  .form-horizontal
+    .form-group
+      = label_tag(:request_date, "Request Date", class: 'col-md-2 control-label')
+      .col-md-5
+        - request_datetime = "#{format_datetime(trapped_request.request_date)} UTC"
+        = text_field_tag(:request_date, request_datetime, class: 'form-control', disabled: true)
+
+    .form-group
+      = label_tag(:request_method, "Request Method", class: 'col-md-2 control-label')
+      .col-md-5
+        - request_method = trapped_request.request_method
+        = text_field_tag(:request_method, request_method, class: 'form-control', disabled: true)
+
+    .form-group
+      = label_tag(:remote_ip, "Request Date", class: 'col-md-2 control-label')
+      .col-md-5
+        - remote_ip = trapped_request.remote_ip
+        = text_field_tag(:remote_ip, remote_ip, class: 'form-control', disabled: true)
+
+    .form-group
+      = label_tag(:scheme, "Request Scheme", class: 'col-md-2 control-label')
+      .col-md-5
+        - scheme = trapped_request.scheme
+        = text_field_tag(:scheme, scheme, class: 'form-control', disabled: true)
+
+    .form-group
+      = label_tag(:headers, "Request Headers", class: 'col-md-2 control-label')
+      .col-md-5
+        - request_headers = format_delimited_data_string(trapped_request.headers)
+        = text_area_tag(:headers, request_headers, class: 'form-control', disabled: true, rows: 5)
+
+    .form-group
+      = label_tag(:query_parameters, "Query Parameters", class: 'col-md-2 control-label')
+      .col-md-5
+        - query_parameters = format_delimited_data_string(trapped_request.query_parameters)
+        = text_area_tag(:query_parameters, query_parameters, class: 'form-control', disabled: true, rows: 5)
+
+    .form-group
+      = label_tag(:request_parameters, "Request Parameters", class: 'col-md-2 control-label')
+      .col-md-5
+        - request_parameters = format_delimited_data_string(trapped_request.request_parameters)
+        = text_area_tag(:request_parameters, request_parameters, class: 'form-control', disabled: true, rows: 5)
+
+    .form-group
+      = label_tag(:cookies, "Cookies", class: 'col-md-2 control-label')
+      .col-md-5
+        - cookies_data = format_delimited_data_string(trapped_request.cookies, ";")
+        = text_area_tag(:cookies, cookies_data, class: 'form-control', disabled: true, rows: 5)
+

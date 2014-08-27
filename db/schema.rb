@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140827130307) do
+ActiveRecord::Schema.define(:version => 20140827213838) do
 
   create_table "subscribers", :force => true do |t|
     t.string   "email"
@@ -29,14 +29,14 @@ ActiveRecord::Schema.define(:version => 20140827130307) do
     t.string   "request_method"
     t.string   "remote_ip"
     t.string   "scheme"
-    t.string   "query_string"
-    t.text     "query_params"
+    t.text     "query_parameters"
     t.string   "cookies"
     t.text     "headers"
     t.text     "raw_response"
     t.integer  "subscriber_id"
-    t.datetime "created_at",     :null => false
-    t.datetime "updated_at",     :null => false
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+    t.text     "request_parameters"
   end
 
 end

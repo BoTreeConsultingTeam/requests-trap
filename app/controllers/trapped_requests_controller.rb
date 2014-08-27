@@ -4,14 +4,23 @@ class TrappedRequestsController < ApplicationController
   #    /admin/subscribers/:subscriber_id/requests(.:format)
   #    /:subscriber_trapping_code/requests(.:format)
   def index
-    # TODO
+    set_subscriber
+
+    if @subscriber.present?
+      @trapped_requests = @subscriber.trapped_requests.order('created_at DESC')
+    end
   end
 
   # GET
   #   /admin/subscribers/:subscriber_id/requests/:id(.:format)
   #   /:subscriber_trapping_code/requests/:id(.:format)
   def show
-    # TODO
+    set_subscriber
+
+    if @subscriber.present?
+      @trapped_request = @subscriber.trapped_requests.where(id: params[:id]).first
+    end
+
   end
 
   # GET
@@ -20,4 +29,25 @@ class TrappedRequestsController < ApplicationController
   def destroy
     # TODO
   end
+
+  private
+
+  def find_subscriber
+    subscriber_id = params[:subscriber_id]
+    subscriber_trapping_code = params[:subscriber_trapping_code]
+
+    subscriber = nil
+    if subscriber_id.present?
+      subscriber = Subscriber.find_by_id(subscriber_id)
+    elsif subscriber_trapping_code.present?
+      subscriber = Subscriber.find_by_trapping_code(subscriber_trapping_code)
+    end
+
+    subscriber
+  end
+
+  def set_subscriber
+    @subscriber = find_subscriber
+  end
+
 end

@@ -1,0 +1,18 @@
+- trapped_requests = local_assigns.has_key?(:trapped_requests) ? trapped_requests : nil
+- user_context = local_assigns.has_key?(:user_context) ? user_context : nil
+- if trapped_requests.present? and user_context.present?
+  %table.table.table-striped
+    %thead
+      %tr
+        %th Request Date
+        %th Remote IP
+        %th Request Method
+        %th
+
+      %tbody
+        - trapped_requests.each do |trapped_request|
+          %tr
+            %td= "#{format_datetime(trapped_request.request_date)} UTC"
+            %td= trapped_request.remote_ip
+            %td= trapped_request.request_method
+            %td= trapped_request_show_link(trapped_request, user_context)
