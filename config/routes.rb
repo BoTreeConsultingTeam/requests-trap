@@ -1,6 +1,10 @@
 RequestsTrap::Application.routes.draw do
   root :to => 'welcome#index'
 
+  namespace :admin do
+    resources :subscribers
+  end
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
