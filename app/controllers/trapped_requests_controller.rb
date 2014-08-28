@@ -9,6 +9,13 @@ class TrappedRequestsController < ApplicationController
     if @subscriber.present?
       @trapped_requests = @subscriber.trapped_requests.order('created_at DESC')
     end
+
+    respond_to do |format|
+       format.html
+       format.js {
+         render file: "trapped_requests/refresh_trapped_requests_listing"
+       }
+    end
   end
 
   # GET

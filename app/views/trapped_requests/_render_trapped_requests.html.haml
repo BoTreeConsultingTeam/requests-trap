@@ -1,0 +1,7 @@
+- trapped_requests = local_assigns.has_key?(:trapped_requests) ? trapped_requests : nil
+- unless trapped_requests.nil?
+  - if trapped_requests.empty?
+    = render partial: "trapped_requests/no_trapped_requests_found"
+  - else
+    - user_context = find_user_context(params)
+    = render partial: "trapped_requests/trapped_requests_listing", locals: { trapped_requests: trapped_requests,  user_context: user_context}

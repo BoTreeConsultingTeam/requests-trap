@@ -13,3 +13,4 @@
 //= require jquery
 //= require jquery_ujs
 //= require welcome
+//= require trapped_requests

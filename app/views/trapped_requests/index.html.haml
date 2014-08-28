@@ -3,11 +3,15 @@
   - set_page_header("#{@subscriber.trapping_code} - Trapped Requests Listing", false)
 
   - trapped_requests = @trapped_requests
-  - if trapped_requests.empty?
-    = render partial: "trapped_requests/no_trapped_requests_found"
-  - else
-    - user_context = find_user_context(params)
-    = render partial: "trapped_requests/trapped_requests_listing", locals: { trapped_requests: trapped_requests,  user_context: user_context}
+
+  %br/
+  %br/
+  -# The REFRESH INTERVAL is defined in file /app/assets/javascripts/trapped_requests.js
+  %p.text-danger
+    %small *This page refreshes automatically every 15 seconds
+
+  #trappedRequestsListingContainer
+    = render partial: "trapped_requests/render_trapped_requests", locals: { trapped_requests: trapped_requests}
 - else
   = back_button_from_trapped_requests_page(params)
   %p

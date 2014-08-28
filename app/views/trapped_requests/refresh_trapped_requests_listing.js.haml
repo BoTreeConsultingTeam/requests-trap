@@ -1,0 +1,4 @@
+:plain
+  var trappedRequestsListingContainer = $('#trappedRequestsListingContainer');
+  var trappedRequestsListing = "#{escape_javascript(render( partial: 'trapped_requests/render_trapped_requests', locals: { trapped_requests: @trapped_requests } )) }";
+  trappedRequestsListingContainer.html(trappedRequestsListing);

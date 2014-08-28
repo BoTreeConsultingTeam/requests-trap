@@ -47,8 +47,8 @@ class TrapRequestController < ApplicationController
     request_method = request.method
     remote_ip = request.remote_ip
     headers = filter_request_headers
-    query_params = request.query_parameters
-    request_params = request.request_parameters if request.post?
+    query_params = request.query_parameters if request.get?
+    request_params = request.request_parameters unless request.get?
     received_cookies = headers["HTTP_COOKIE"]
     scheme = request.protocol
     request_date = request_datetime
